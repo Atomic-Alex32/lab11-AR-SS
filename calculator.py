@@ -15,7 +15,7 @@ def square_root(a):
     return math.sqrt(a)
 
 def hypotenuse(a, b):
-    math.hypot(a, b)
+    return math.hypot(a, b)
 
 def add(a, b): 
     return a + b
@@ -26,10 +26,15 @@ def subtract(a, b):
 def logarithm(a, b):
     if b <= 0:
         raise ValueError
-    math.log(b, a)
+    return math.log(b, a)
 
-def exponent(a, b):
-    math.pow(a, b)
+def log(a,b):
+    if b<= 0:
+        raise ValueError
+    return math.log(b,a)
+
+def exp(a,b):
+    return a ** b
 
 def mul(a,b):
     return a * b
